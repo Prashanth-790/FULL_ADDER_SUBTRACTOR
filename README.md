@@ -1,6 +1,8 @@
-# FULL_ADDER_SUBTRACTOR
+### NAME: LAKSHMEN PRASHANTH R
+### REG NO: 24007066
+### EXPERIMENT: FULL_ADDER_SUBTRACTOR
 
-Implementation-of-Full-Adder-and-Full-subtractor-circuit
+
 
 **AIM:**
 
@@ -72,7 +74,7 @@ For Full Subtractor
 
 
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by lakshmen prashanth R: RegisterNumber:24007066
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
 */
 
 **RTL Schematic:**
