@@ -36,55 +36,52 @@ Diff = A ⊕ B ⊕ Bin
 
 Borrow out = A'Bin + A'B + BBin
 
-**Truthtable**
+**Truthtable:**:
 
-**Procedure**
 
-Write the detailed procedure here
+![Screenshot 2024-12-12 052352](https://github.com/user-attachments/assets/ed8481c3-8f2f-4f2b-9324-64b01628fc9a)
+
+
+![Screenshot 2024-12-12 052457](https://github.com/user-attachments/assets/090a0693-12f4-45f3-8400-efd6c8cd0bd5)
+
+
+
+**Procedure:**
+1. Open Quartus II and create a new project.
+2. Use schematic design entry to draw the full adder circuit. 
+3. The circuit consists of XOR, AND, and OR gates. 
+4. Compile the design, verify its functionality through simulation. 
+5. Implement the design on the target device and program it.
+
+For Full Subtractor
+
+1. Follow the same steps as for the full adder. 
+2. Draw the full subtractor circuit using schematic design. 
+3. The circuit includes XOR, AND, OR gates to perform subtraction. 
+4. Compile, simulate, implement, and program the design similarly to the full adder.
+
+
 
 **Program:**
-```
-module ex4(sum,cout,a,b,cin);
-output sum;
-output cout;
-input a;
-input b;
-input cin;
-//Instantiate logic gate primitives
-xor (sl,a,b);
-and(cl,a,b);
-xor(sum,sl,cin);
-and(c2,sl,cin);
-or(cout,c2,c1);
-endmodule
-```
-```
-module ex4a (df,bo,a,b,bin);
-output df;
-output bo;
-input a;
-input b;
-input bin;
-wire w1,w2,w3;
-assign w1=a^b;
-assign w2=(~a&b);
-assign w3=(~w1&bin);
-assign df=w1^bin;
-assign bo=w2|w3;
-endmodule 
-```
+
+![exp4](https://github.com/user-attachments/assets/586d5b00-370b-4bf1-bb2d-680c7ff9af57)
+
+
+![Screenshot 2024-12-12 051700](https://github.com/user-attachments/assets/5dc443d8-1e2e-4509-bdcc-ea74ee5d17ed)
+
+
 
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by lakshmen prashanth R: RegisterNumber:24007066
 */
 
-**RTL Schematic**
+**RTL Schematic:**
 ![image](https://github.com/user-attachments/assets/daa48cbc-c32d-492a-b26c-1bb336d9dec3)
 ![image](https://github.com/user-attachments/assets/f393180f-f140-4aec-a257-b6f4d81a49de)
 
 
 
-**Output Timing Waveform**
+**Output Timing Waveform:**
 ![image](https://github.com/user-attachments/assets/766e229b-2a24-41af-8eea-91dba8c20639)
 ![image](https://github.com/user-attachments/assets/5c25459f-476e-4d8a-aaed-e0d494b9bfc1)
 
